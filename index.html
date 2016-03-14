@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" >
+        <style>
+            .topic {
+                text-align: center;
+            }
+            
+            .inset{
+                position: absolute;
+                bottom: 5px;
+                left: 0px;
+                width: 100%;
+                background-color: white;
+                text-align: center;
+                opacity: .7;
+            }
+            
+            .image-preview {
+                margin: 2px;
+                display: inline-block;
+                position: relative;
+            }
+            
+            .image-preview img {
+                display: inline-block;
+                width: 200px;
+                height: 200px;
+                overflow: hidden;
+            }
+            .image-preview video {
+                width: 200px;
+                height: 200px;
+                vertical-align: middle;
+                background-color: black;
+            }
+            .glyphicon {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-size: 50px;
+                opacity: .5;
+                color: white;
+            }
+            .image-detail .panel-body {
+                text-align: center;   
+            }
+            .image-detail img, video {
+                max-width: 100%;
+            }
+            .topic .image-preview {
+                animation: fadein .65s ease-out;
+            }
+            @keyframes fadein {
+                0% {
+                    opacity: 0%;   
+                }
+                100% {
+                    opacity: 100%;   
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container"></div>
+        <script src="public/main.js"></script>
+    </body>
+</html>
+
